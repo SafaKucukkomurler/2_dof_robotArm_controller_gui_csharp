@@ -1,0 +1,20 @@
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\bin\Debug\robotArmControl.exe.config
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\bin\Debug\robotArmControl.exe
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\bin\Debug\robotArmControl.pdb
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.csproj.AssemblyReference.cache
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.Form1.resources
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.Properties.Resources.resources
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.csproj.GenerateResource.cache
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.csproj.CoreCompileInputs.cache
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.exe
+C:\Users\Meral Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.pdb
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\bin\Debug\robotArmControl.exe.config
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\bin\Debug\robotArmControl.exe
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\bin\Debug\robotArmControl.pdb
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.csproj.AssemblyReference.cache
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.Form1.resources
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.Properties.Resources.resources
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.csproj.GenerateResource.cache
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.csproj.CoreCompileInputs.cache
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.exe
+C:\Users\Meral_Bilgisayar\Desktop\Safa\robot_arm_pc\robotArmControl\robotArmControl\obj\Debug\robotArmControl.pdb
