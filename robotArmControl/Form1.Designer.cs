@@ -73,7 +73,6 @@ namespace robotArmControl
             this.bt_fileOpen = new System.Windows.Forms.Button();
             this.bt_send_work = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -571,11 +570,6 @@ namespace robotArmControl
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Koordinat Dosyası Gönder";
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 2000;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -657,7 +651,6 @@ namespace robotArmControl
         private System.Windows.Forms.Button bt_gripper_setZero;
         private System.Windows.Forms.Label label_X;
         private System.Windows.Forms.Label label_Y;
-        private System.Windows.Forms.Timer timer1;
     }
 }
 

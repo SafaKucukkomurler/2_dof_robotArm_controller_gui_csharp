@@ -22,7 +22,7 @@ namespace robotArmControl
 
         float t_teta0 = 0;
         float t_teta1 = 0;
-        float t_zDepth = 0;
+        //float t_zDepth = 0;
 
         double[] t_pos = new double[2];
         float[] pos = new float[2];
@@ -53,7 +53,7 @@ namespace robotArmControl
                     ComPort.StopBits = StopBits.One;
                     ComPort.Parity = Parity.None;
                     ComPort.Open();
-                    bt_comPortConnect.Text = "KAPAT";
+                    bt_comPortConnect.Text = "Kapat";
                     cb_comPort.Enabled =     false;
                     bt_arm1_left.Enabled =   true;
                     bt_arm1_right.Enabled =  true;
@@ -72,7 +72,7 @@ namespace robotArmControl
                 else
                 {
                     ComPort.Close();
-                    bt_comPortConnect.Text = "BAĞLAN";
+                    bt_comPortConnect.Text = "Bağlan";
                     cb_comPort.Enabled = true;
                     bt_arm1_left.Enabled = false;
                     bt_arm1_right.Enabled = false;
@@ -117,8 +117,8 @@ namespace robotArmControl
             bt_servoPitch_up.Enabled = false;
             bt_servoRoll_left.Enabled = false;
             bt_servoRoll_right.Enabled = false;
-            bt_send_work.Enabled = true;
-            bt_fileOpen.Enabled = true;
+            bt_send_work.Enabled = false;
+            bt_fileOpen.Enabled = false;
             bt_gripper_setZero.Enabled = false;
 			gripper_refAngles[0] = 0;
 			gripper_refAngles[1] = 0;
@@ -391,30 +391,6 @@ namespace robotArmControl
 
         private void bt_send_work_Click(object sender, EventArgs e)
         {
-            /*
-            byte[] step = new byte[2];
-            UInt16 command = 111;
-
-            step[0] = (byte)(command);
-            step[1] = (byte)(command >> 8);
-
-            try
-            {
-                byte[] sendBuffer = new byte[5];
-                sendBuffer[0] = (byte)'@';
-                sendBuffer[1] = 2;
-                sendBuffer[2] = 1;
-                sendBuffer[3] = step[0];
-                sendBuffer[4] = step[1];
-                ComPort.Write(sendBuffer, 0, 5);
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            timer1.Enabled = true; */
-
             double target_coord_X = Convert.ToDouble(gripper_refPos[0]) + t_pos[0];
             double target_coord_Y = Convert.ToDouble(gripper_refPos[1]) + t_pos[1];
             double kinematicLimit = Math.Sqrt(Math.Pow(target_coord_X, 2) + Math.Pow(target_coord_Y, 2));            
@@ -449,53 +425,7 @@ namespace robotArmControl
                 MessageBox.Show("Hedef koordinatlar robot kinematik limitlerini aşıyor", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Enabled = false;
-
-            byte[] step = new byte[2];
-            UInt16 command = 500;
-
-            step[0] = (byte)(command);
-            step[1] = (byte)(command >> 8);
-
-            try
-            {
-                byte[] sendBuffer = new byte[5];
-                sendBuffer[0] = (byte)'@';
-                sendBuffer[1] = 3;
-                sendBuffer[2] = 0;
-                sendBuffer[3] = step[0];
-                sendBuffer[4] = step[1];
-                ComPort.Write(sendBuffer, 0, 5);
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-            command = 289;
-
-            step[0] = (byte)(command);
-            step[1] = (byte)(command >> 8);
-
-            try
-            {
-                byte[] sendBuffer = new byte[5];
-                sendBuffer[0] = (byte)'@';
-                sendBuffer[1] = 1;
-                sendBuffer[2] = 1;
-                sendBuffer[3] = step[0];
-                sendBuffer[4] = step[1];
-                ComPort.Write(sendBuffer, 0, 5);
-            }
-            catch (Exception err)
-            {
-                MessageBox.Show(err.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        }        
 
         private void bt_gripper_setZero_Click(object sender, EventArgs e)
         {
