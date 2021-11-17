@@ -588,7 +588,7 @@ namespace robotArmControl
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Ameliyat Yardımcı Kol Kontrol Yazılımı Ver 1.0 ";
+            this.Text = "2 DOF Scara Robot Arm Controller";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
